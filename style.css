@@ -705,17 +705,22 @@ header h1:hover {
 }
 
 .botao-orcamento {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 13px 25px;
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    margin: 35px auto 10px;
+    padding: 16px 20px;
     background: #222;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
     transition: 0.3s;
 }
 
 .botao-orcamento:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
