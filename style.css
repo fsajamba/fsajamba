@@ -647,3 +647,18 @@ header h1:hover {
     height: 300px;
     border: 0;
 }
+.botao-rota {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-rota:hover {
+    transform: scale(1.05);
+}
