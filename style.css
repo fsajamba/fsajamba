@@ -725,3 +725,10 @@ header h1:hover {
 .botao-orcamento:hover {
     transform: scale(1.03);
 }
+.servico {
+    text-align: left;
+}
+
+.servico-icone {
+    text-align: left;
+}
