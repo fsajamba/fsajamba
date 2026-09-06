@@ -664,11 +664,11 @@ header h1:hover {
 }
 .servicos {
     padding: 60px 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .servicos h2 {
-    text-align: center;
+    text-align: left;
     font-size: 32px;
     margin-bottom: 35px;
 }
@@ -695,9 +695,9 @@ header h1:hover {
 }
 
 .servico-icone {
-    font-size: 50px;
+    font-size: 35px;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .servico h3 {
