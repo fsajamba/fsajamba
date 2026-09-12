@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+ <html lang="pt-AO">
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Fernando Sajamba | Acabamentos em Construção Civil</title> 
+    <link rel="stylesheet" href="estilo.css"> 
+    <script>
+function mudaFoto(foto) {
+    document.getElementById("icone").src = foto;
+
+}
+
+    </script>
+     </head> 
+     <body> 
+
+        <div id="cabecalho"> 
+        <header id="cabecalho"> 
+    <hgroup> 
+<h1>FERNANDO SAJAMBA</h1> 
+        <h2>ACABAMENTOS <sub>EM CONSTRUÇÃO CIVIL</sub>
+    </h2> 
+</hgroup> 
+<img id="icone" src="fotos/logo3.PNG" alt="Logo Fernando Sajamba"> 
+<nav id="menu"> 
+    <h1>Menu Principal</h1>
+     <ul> <li onmouseover="mudaFoto('fotos/casa.png')" onmouseout="mudaFoto('fotos/logo3.PNG')"> 
+        <a href="index.html">Início</a> 
+    </li> <li onmouseover="mudaFoto('fotos/fotos.png')" onmouseout="mudaFoto('fotos/logo3.PNG')"> 
+        <a href="fotos.html">Fotos</a> 
+    </li> <li onmouseover="mudaFoto('fotos/multimidia.png')" onmouseout="mudaFoto('fotos/logo3.PNG')"> 
+        <a href="multimidia.html">Multimídia</a> 
+    </li> <li onmouseover="mudaFoto('fotos/contato.png')" onmouseout="mudaFoto('fotos/logo3.PNG')"> 
+        <a href="fale-conosco.html">Fale Connosco</a> 
+    </li> </ul> 
+</nav> 
+</header> 
+<main> 
+    <section id="corpo"> 
+        <article id="noticia-principal"> 
+            <h1>Sobre Nós</h1> 
+            <h2>Por Fernando S. Sajamba</h2>
+
+             <p> <strong>A Fernando Sajamba Acabamentos</strong> é uma empresa dedicada à transformação e valorização de espaços residenciais e comerciais, oferecendo soluções de qualidade para tornar cada ambiente mais bonito, funcional e confortável. </p> 
+             <p> Trabalhamos com profissionalismo, dedicação e atenção aos detalhes, procurando compreender as necessidades de cada cliente e apresentar soluções que correspondam às suas expectativas. </p> 
+             <p> Os nossos serviços incluem ladrilho, instalações elétricas residenciais, canalização, pintura, design de interiores, estuques e outros serviços de acabamento e remodelação. 
+    </p> 
+    <p> Acreditamos que cada espaço tem o seu próprio estilo. Por isso, colocamos experiência, criatividade e compromisso em cada projeto, desde os pequenos trabalhos até às grandes remodelações. </p> 
+    <figure class="foto-legenda"> 
+        <img src="fotos/minha1.jpg" alt="Trabalho da Fernando Sajamba"> 
+        <figcaption>
+            <h1>Sajamba</h1> 
+            <p> Sonhos Também se Constroem </p>
+             </figcaption>
+              </figure> 
+             <p> Na <strong>Fernando Sajamba – Acabamentos</strong>, transformamos os seus espaços com profissionalismo, dedicação e acabamentos de excelência. Porque a sua obra merece qualidade, bom gosto e atenção a cada detalhe. </p>
+             <div class="video-card">
+                <div class="capa-video">
+    <video controls poster="capa-video/capa-video1.JPG">
+        <source src="videos/video1.MP4" type="video/mp4">
+        O seu navegador não suporta vídeos.
+    </video>
+
+    <h3>Brevemente</h3> 
+         </article>
+          </section> 
+          <aside id="lateral">
+<!-- RÁDIO -->
+
+<div class="radio-card">
+
+    <h2>Áudio</h2>
+
+    <div class="radio-container">
+
+        <img src="fotos/radio.png" alt="Vai um áudio Rádio">
+
+        <audio controls>
+            <source src="audio/audio1.mp3" type="audio/mpeg">
+            O seu navegador não suporta áudio.
+        </audio>
+
+    </div>
+
+</div>
+
+Brevemente
+    <h2>Os vídeos mais recentes</h2>
+
+    <div class="video-card">
+<div class="capa-video">
+        <video controls poster="capa-video/capa-video2.JPG">
+            <source src="videos/video1.mp4" type="video/mp4">
+            O seu navegador não suporta vídeo.
+        </video>
+
+        <h3>Design de Interiores</h3>
+
+        <p>
+            Criação de ambientes modernos, elegantes e funcionais.
+            Estuques e acabamentos que dão um toque especial e profissional à sua obra.
+        </p>
+
+    </div>
+
+    <h3>Brevemente</h3> 
+             <h2>Os vídeos mais recentes</h2> 
+             <p> Criação de ambientes modernos, elegantes e funcionais. Estuques e acabamentos – detalhes que dão um toque especial e profissional à sua obra. </p>
+                <p> Na <strong>Fernando Sajamba</strong>, acreditamos que cada detalhe faz a diferença. </p> 
+            </aside> 
+        </main> 
+        <footer id="rodape"> 
+             <p> Copyright 2026 - by Fernando Sajamba <br> 
+                </p>
+
+            </footer> 
+        <button id="voltarTopo" title="Voltar ao topo">
+    ↑
+</button>
+
+<script>
+    const botaoTopo = document.getElementById("voltarTopo");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            botaoTopo.style.display = "flex";
+        } else {
+            botaoTopo.style.display = "none";
+        }
+    });
+
+    botaoTopo.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+<script>
+    const videos = document.querySelectorAll("video");
+
+    videos.forEach(video => {
+
+        video.addEventListener("play", function() {
+
+            videos.forEach(outroVideo => {
+
+                if (outroVideo !== video) {
+                    outroVideo.pause();
+                }
+
+            });
+
+        });
+
+    });
+</script>
+
+
+
+</body>
+</html>
+    </body> 
+    </html>
+

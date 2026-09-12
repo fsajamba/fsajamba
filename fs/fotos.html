@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fotos dos Trabalhos | Fernando Sajamba</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</script> 
+     <script> function mudaFoto(foto) { document.getElementById("icone").src = foto; } 
+ </script>
+</head>
+
+<body>
+
+<div id="cabecalho">
+
+    <!-- CABEÇALHO -->
+    <header id="cabecalho">
+
+        <hgroup>
+            <h1>FERNANDO SAJAMBA</h1>
+            <h2>ACABAMENTOS <sub>EM CONSTRUÇÃO CIVIL</sub></h2>
+        </hgroup>
+
+        <img id="icone" src="fotos/logo3.PNG" alt="Logo Fernando Sajamba">
+
+        <!-- MENU -->
+        <nav id="menu">
+
+            <h1>Menu Principal</h1>
+
+            <ul>
+
+                <li
+                    onmouseover="mudaFoto('fotos/casa.png')"
+                    onmouseout="mudaFoto('fotos/fotos.PNG')">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li
+                    onmouseover="mudaFoto('fotos/fotos.png')"
+                    onmouseout="mudaFoto('fotos/fotos.PNG')">
+                    <a href="fotos.html">Fotos</a>
+                </li>
+
+                <li
+                    onmouseover="mudaFoto('fotos/multimidia.png')"
+                    onmouseout="mudaFoto('fotos/fotos.PNG')">
+                    <a href="multimidia.html">Multimídia</a>
+                </li>
+
+                <li
+                    onmouseover="mudaFoto('fotos/contato.png')"
+                    onmouseout="mudaFoto('fotos/fotos.PNG')">
+                    <a href="fale-conosco.html">Fale Connosco</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- GALERIA -->
+    <main>
+
+    <section id="fotos">
+
+        <h1>Galeria de Fotos</h1>
+
+        <h2>
+            Conheça alguns dos nossos trabalhos e projetos.
+        </h2>
+
+        <div class="categorias-fotos">
+
+            <!-- SOBRE NÓS -->
+            <div class="categoria-foto">
+
+                <div class="categoria-imagem">
+    <img src="fotos/sobre-nos/galeria1.JPG"
+         alt="Sobre Nós">
+</div>
+
+                <h1>Sobre Nós</h1>
+
+                <p>
+                    Conheça a nossa empresa, a nossa equipa
+                    e a nossa forma de trabalhar.
+                </p>
+
+                <a href="sobrenos.html">
+                    Ver fotos
+                </a>
+
+            </div>
+
+
+            <!-- TRABALHOS RECENTES -->
+            <div class="categoria-foto">
+
+                <div class="categoria-imagem">
+    <img src="fotos/sobre-nos/galeria2.JPG"
+         alt="Sobre Nós">
+                </div>
+
+                <h2>Trabalhos Recentes</h2>
+
+                <p>
+                    Veja alguns dos projetos e trabalhos
+                    realizados recentemente.
+                </p>
+
+                <a href="trabalhos-recentes.html">
+                    Ver fotos
+                </a>
+
+            </div>
+
+
+            <!-- ACABAMENTOS FINAIS -->
+            <div class="categoria-foto">
+
+                <div class="categoria-imagem">
+    <img src="fotos/sobre-nos/galeria3.JPG"
+         alt="Sobre Nós">
+                </div>
+
+                <h2>Acabamentos Finais</h2>
+
+                <p>
+                    Confira os detalhes e a qualidade
+                    dos nossos acabamentos.
+                </p>
+
+                <a href="acabamentos-finais.html">
+                    Ver fotos
+                </a>
+
+            </div>
+
+
+            <!-- FINAL -->
+            <div class="categoria-foto">
+
+                <div class="categoria-imagem">
+    <img src="fotos/sobre-nos/galeria4.JPG"
+         alt="Sobre Nós">
+                </div>
+
+                <h2>Final</h2>
+
+                <p>
+                    Veja o resultado final dos nossos
+                    projetos e trabalhos.
+                </p>
+
+                <a href="final.html">
+                    Ver fotos
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="sobre-fotos">
+
+        <p>
+            Nesta galeria apresentamos alguns dos projetos
+            e trabalhos realizados pela
+            <strong>
+                Fernando Sajamba Acabamentos em Construção Civil.
+            </strong>
+        </p>
+
+        <p>
+            Qualidade, profissionalismo e atenção aos
+            detalhes em cada projeto.
+        </p>
+
+    </section>
+
+</main>
+
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+
+        <p>
+            Copyright 2026 - Fernando Sajamba
+        </p>
+
+    </footer>
+
+</div>
+<button id="voltarTopo" title="Voltar ao topo">
+    ↑
+</button>
+
+<script>
+    const botaoTopo = document.getElementById("voltarTopo");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            botaoTopo.style.display = "flex";
+        } else {
+            botaoTopo.style.display = "none";
+        }
+    });
+
+    botaoTopo.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
+</body>
+</html>
+

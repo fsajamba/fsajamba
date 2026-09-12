@@ -1,0 +1,322 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Final | Fernando Sajamba</title>
+
+    <link rel="stylesheet"
+          href="estilo.css">
+
+    <script>
+
+        const fotosFinal = [
+            "fotos/final/galeria1.JPG",
+            "fotos/final/galeria2.JPG",
+            "fotos/final/galeria3.JPG",
+            "fotos/final/galeria4.JPG",
+            "fotos/final/galeria5.JPG",
+            "fotos/final/galeria6.JPG",
+            "fotos/final/galeria7.JPG",
+            "fotos/final/galeria8.JPG",
+            "fotos/final/galeria9.JPG",
+            "fotos/final/galeria10.JPG"
+        ];
+
+        let indiceAtual = 0;
+
+        function abrirLightbox(indice) {
+
+            indiceAtual = indice;
+
+            document.getElementById("imagemLightbox").src =
+                fotosFinal[indiceAtual];
+
+            document.getElementById("contador").textContent =
+                (indiceAtual + 1) + " / " + fotosFinal.length;
+
+            document.getElementById("lightbox").classList.add("active");
+        }
+
+        function fecharLightbox() {
+
+            document.getElementById("lightbox").classList.remove("active");
+        }
+
+        function fotoAnterior() {
+
+            indiceAtual--;
+
+            if (indiceAtual < 0) {
+                indiceAtual = fotosFinal.length - 1;
+            }
+
+            atualizarLightbox();
+        }
+
+        function proximaFoto() {
+
+            indiceAtual++;
+
+            if (indiceAtual >= fotosFinal.length) {
+                indiceAtual = 0;
+            }
+
+            atualizarLightbox();
+        }
+
+        function atualizarLightbox() {
+
+            document.getElementById("imagemLightbox").src =
+                fotosFinal[indiceAtual];
+
+            document.getElementById("contador").textContent =
+                (indiceAtual + 1) + " / " + fotosFinal.length;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<div id="cabecalho">
+
+    <header id="cabecalho">
+
+        <hgroup>
+
+            <h1>FERNANDO SAJAMBA</h1>
+
+            <h2>
+                ACABAMENTOS
+                <sub>EM CONSTRUÇÃO CIVIL</sub>
+            </h2>
+
+        </hgroup>
+
+        <img
+            id="icone"
+            src="fotos/logo3.PNG"
+            alt="Logo Fernando Sajamba">
+
+        <nav id="menu">
+
+            <h1>Menu Principal</h1>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="fotos.html">
+                        Fotos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="multimidia.html">
+                        Multimídia
+                    </a>
+                </li>
+
+                <li>
+                    <a href="fale-conosco.html">
+                        Fale Connosco
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="fotos">
+
+            <h1>Final</h1>
+
+            <p>
+                Confira o resultado final de alguns
+                dos nossos projetos, onde qualidade,
+                dedicação e atenção aos detalhes
+                fazem a diferença.
+            </p>
+
+
+            <!-- GALERIA -->
+
+            <div class="grelha-fotos">
+
+                <a href="#"
+                   onclick="abrirLightbox(0); return false;">
+                    <img
+                        src="fotos/final/galeria1.JPG"
+                        alt="Projeto Final 1">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(1); return false;">
+                    <img
+                        src="fotos/final/galeria2.JPG"
+                        alt="Projeto Final 2">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(2); return false;">
+                    <img
+                        src="fotos/final/galeria3.JPG"
+                        alt="Projeto Final 3">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(3); return false;">
+                    <img
+                        src="fotos/final/galeria4.JPG"
+                        alt="Projeto Final 4">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(4); return false;">
+                    <img
+                        src="fotos/final/galeria5.JPG"
+                        alt="Projeto Final 5">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(5); return false;">
+                    <img
+                        src="fotos/final/galeria6.JPG"
+                        alt="Projeto Final 6">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(6); return false;">
+                    <img
+                        src="fotos/final/galeria7.JPG"
+                        alt="Projeto Final 7">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(7); return false;">
+                    <img
+                        src="fotos/final/galeria8.JPG"
+                        alt="Projeto Final 8">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(8); return false;">
+                    <img
+                        src="fotos/final/galeria9.JPG"
+                        alt="Projeto Final 9">
+                </a>
+
+                <a href="#"
+                   onclick="abrirLightbox(9); return false;">
+                    <img
+                        src="fotos/final/galeria10.JPG"
+                        alt="Projeto Final 10">
+                </a>
+
+            </div>
+
+
+            <!-- TEXTO -->
+
+            <section id="sobre-fotos">
+
+                <p>
+                    Nesta galeria mostramos alguns
+                    resultados finais dos nossos projetos
+                    de
+                    <strong>
+                        acabamentos em construção civil.
+                    </strong>
+                </p>
+
+                <p>
+                    O nosso objetivo é transformar cada
+                    espaço num ambiente único, funcional
+                    e bem acabado.
+                </p>
+
+            </section>
+
+
+            <p style="text-align: center;">
+
+                <a href="fotos.html">
+                    ← Voltar para Galeria de Fotos
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div id="lightbox">
+
+        <button
+            class="fechar"
+            onclick="fecharLightbox()">
+            ✕
+        </button>
+
+        <button
+            class="anterior"
+            onclick="fotoAnterior()">
+            ❮
+        </button>
+
+        <img
+            id="imagemLightbox"
+            src=""
+            alt="Foto ampliada">
+
+        <button
+            class="proxima"
+            onclick="proximaFoto()">
+            ❯
+        </button>
+
+        <div id="contador">
+            1 / 10
+        </div>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+
+    <footer id="rodape">
+
+        <p>
+            Copyright 2026 -
+            Fernando Sajamba
+        </p>
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
+```

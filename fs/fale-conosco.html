@@ -1,0 +1,245 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fale Connosco | Fernando Sajamba</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <script src="fs/script.js"></script>
+
+    <script>
+        function mudaFoto(foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="cabecalho">
+
+    <!-- CABEÇALHO -->
+
+    <header id="cabecalho">
+
+        <hgroup>
+
+            <h1>FERNANDO SAJAMBA</h1>
+
+            <h2>
+                ACABAMENTOS <sub>EM CONSTRUÇÃO CIVIL</sub>
+            </h2>
+
+        </hgroup>
+
+        <img
+            id="icone"
+            src="fotos/logo3.PNG"
+            alt="Logo Fernando Sajamba">
+
+        <!-- MENU PRINCIPAL -->
+
+        <nav id="menu">
+
+            <h1>Menu Principal</h1>
+
+            <ul>
+
+                <li
+                    onmouseover="mudaFoto('fotos/casa.png')"
+                    onmouseout="mudaFoto('fotos/contato.PNG')">
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li
+                    onmouseover="mudaFoto('fotos/fotos.png')"
+                    onmouseout="mudaFoto('fotos/contato.PNG')">
+                    <a href="fotos.html">Fotos</a>
+                </li>
+
+                <li
+                    onmouseover="mudaFoto('fotos/multimidia.png')"
+                    onmouseout="mudaFoto('fotos/contato.PNG')">
+                    <a href="multimidia.html">Multimídia</a>
+                </li>
+
+                <li
+                    onmouseover="mudaFoto('fotos/contato.png')"
+                    onmouseout="mudaFoto('fotos/contato.PNG')">
+                    <a href="fale-conosco.html">Fale Connosco</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main>
+
+        <section id="contacto">
+
+            <h1>Fale-Connosco</h1>
+
+            <div class="caixa-contacto">
+
+                <h2><strong>Tem um projeto em mente?</strong></h2>
+
+                <p>
+                    Estamos disponíveis para ouvir as suas ideias,
+                    esclarecer dúvidas e apresentar soluções para o seu projeto.
+                </p>
+
+                <p>
+                    Se precisa de serviços de ladrilho, pintura, canalização,
+                    instalações elétricas residenciais, estuque, design de
+                    interiores ou outros acabamentos, fale connosco.
+                </p>
+
+                <p>
+                    <strong>Fernando Sajamba — Acabamentos em Construção Civil</strong>
+                </p>
+
+                <p>
+                    Transformamos espaços com qualidade, dedicação
+                    e profissionalismo.
+                </p>
+
+                <div class="botoes-contacto">
+                    <a
+    class="botao-facebook"
+    href="https://web.facebook.com/profile.php?id=100093982942255"
+    target="_blank">
+    💙 Visitar Facebook
+</a>
+
+                    <a
+                        class="botao-whatsapp"
+                        href="https://wa.me/244928558201?text=Olá%2C%20Fernando%20Sajamba!%20Gostaria%20de%20solicitar%20informações%20sobre%20os%20seus%20serviços%20de%20acabamentos."
+                        target="_blank">
+                        💬 Falar pelo WhatsApp
+                    </a>
+
+                    <a
+                        class="botao-orcamento"
+                        href="https://wa.me/244928558201?text=Olá%2C%20Fernando%20Sajamba!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                        target="_blank">
+                        🧾 Solicitar orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer id="rodape">
+
+        <div class="localizacao">
+
+            <h3>📍 Localização</h3>
+
+            <p>
+                Bairro Dack Doy, Lubango, Huíla, Angola.
+            </p>
+
+            <div class="mapa">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Dack+Doy,+Lubango,+Hu%C3%ADla,+Angola&output=embed"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+            <a
+                class="botao-rota"
+                href="https://www.google.com/maps/dir/?api=1&destination=Dack+Doy,+Lubango,+Hu%C3%ADla,+Angola"
+                target="_blank">
+                📍 Como chegar
+            </a>
+
+        </div>
+
+
+        <div class="contacto-rodape">
+
+            <h3>📞 Contacto</h3>
+
+            <p>
+                Para informações, dúvidas ou orçamento:
+            </p>
+
+            <p>
+                <a
+                    href="https://wa.me/244928558201?text=Olá%2C%20Fernando%20Sajamba!%20Gostaria%20de%20solicitar%20informações%20sobre%20os%20seus%20serviços%20de%20acabamentos."
+                    target="_blank">
+                    💬 WhatsApp
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                Copyright 2026 - Fernando Sajamba
+            </p>
+
+            <p>
+                <strong>Sonhos Também se Constroem.</strong>
+            </p>
+
+        </div>
+
+    </footer>
+
+</div>
+</html>
+<button id="voltarTopo" title="Voltar ao topo">
+    ↑
+</button>
+
+<script>
+    const botaoTopo = document.getElementById("voltarTopo");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            botaoTopo.style.display = "flex";
+        } else {
+            botaoTopo.style.display = "none";
+        }
+    });
+
+    botaoTopo.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
+</body>
+</html>
+```
